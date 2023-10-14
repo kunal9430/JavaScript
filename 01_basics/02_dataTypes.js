@@ -25,6 +25,7 @@ console.log(typeof kunal)
 // 1. An object
 // 2. An array object
 // 3. A date object
+// 4. Function object
 
 
 
@@ -40,8 +41,20 @@ let lastName = "Johnson";
 let x = true;
 let y = false;
 
+//Symbol
+const id = Symbol('123')
+const anotherId = Symbol('123')
+console.log(id === anotherId) //false
+
+//BigInt
+const bigNumber = 44444444444444444422222222222n
+console.log(typeof bigNumber)
+
 // Object:
-const person = {firstName:"John", lastName:"Doe"};
+const person = {
+    firstName:"John", 
+    lastName:"Doe"
+};
 
 // Array object:
 const cars = ["Saab", "Volvo", "BMW"];
@@ -49,3 +62,12 @@ const cars = ["Saab", "Volvo", "BMW"];
 // Date object:
 const date = new Date("2022-03-25");
 
+//Functions(it is also considered as variable in javaScript)
+const myFunction = function(){
+    console.log("Hello world")
+}
+console.log(typeof myFunction)
+
+
+//every thing inside a curly brase can be treated as an object
+console.log(typeof {name: "Kunal Kumar",age:23})
