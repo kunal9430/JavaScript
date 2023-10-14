@@ -4,6 +4,10 @@
 
 console.log(typeof(undefined))
 console.log(typeof null);
+let kunal = null;
+console.log(kunal)
+console.log(typeof kunal)
+
 
 // JavaScript has 8 Datatypes
 // 1. String
@@ -44,3 +48,4 @@ const cars = ["Saab", "Volvo", "BMW"];
 
 // Date object:
 const date = new Date("2022-03-25");
+
