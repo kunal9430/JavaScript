@@ -66,3 +66,16 @@
 
 // let check = user.hasOwnProperty('name');
 // console.log(check);
+
+//destructuring in javascript
+let course = {
+    coursename:"js in hindi",
+    coursePrice:1233,
+    courseInstructor:"kunal",
+}
+
+let {courseInstructor:instructor} = course;
+console.log(instructor);
+
+let {courseInstructor} = course;
+console.log(courseInstructor);
