@@ -29,5 +29,20 @@ let user = {
         LastLogin:['mon','tue','fri'],
     }
     // console.log(typeof user.symbol)
-    console.log(user[mysymb]);
-    console.log(typeof user[mysymb]);
+    // console.log(user[mysymb]);
+    // console.log(typeof user[mysymb]);
+
+    user.greeting = function(){
+        console.log("Hello User,");
+        // return 1;
+    }
+    // console.log(user["greeting()"]);
+    // console.log(user.greeting());
+    user.greeting();
+
+
+    user.greeting2 = function(){
+        console.log(`Hello User, ${this["full name"]}`)
+    }
+
+    user.greeting2();
